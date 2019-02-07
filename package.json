@@ -1,6 +1,6 @@
 {
   "name": "terminal-block-fonts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "big fonts which each character is formed by many blocks for terminal display",
   "main": "index.js",
   "scripts": {

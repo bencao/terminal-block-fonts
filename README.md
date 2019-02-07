@@ -1,8 +1,8 @@
 # Terminal Block Fonts
 
-Big fonts which each character is formed by many blocks for terminal display.
+Big fonts for terminal display. Each character is a block formed by many dots.
 
-The font is [Arcade](https://www.dafont.com/arcade-ya.font), all fonEt rights belongs to the original author.
+The font data came from [Arcade](https://www.dafont.com/arcade-ya.font), font copy rights belongs to the original author.
 
 ## Install
 
@@ -26,16 +26,16 @@ console.log(toBlockString("05:30:12 AM"));
 const { toBlock, mapBlock, concatBlocks, toString } = require("terminal-block-fonts");
 const { red, yellow, blue } = require("chalk");
 
-const hourBlock = mapBlock(toBlock("05"), red);
-const minuteBlock = mapBlock(toBlock("30"), yellow);
-const secondBlock = mapBlock(toBlock("12"), blue);
+const hourBlock = toBlock("05";
+const minuteBlock = toBlock("30");
+const secondBlock = toBlock("12");
 const sepBlock = toBlock(":");
 
 console.log(toString(concatBlocks(
-  hourBlock,
+  mapBlock(hourBlock, red),
   sepBlock,
-  minuteBlock,
+  mapBlock(minuteBlock, yellow),
   sepBlock,
-  secondBlock
+  mapBlock(secondBlock, blue)
 )));
 ```
