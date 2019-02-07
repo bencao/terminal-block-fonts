@@ -26,7 +26,7 @@ console.log(toBlockString("05:30:12 AM"));
 const { toBlock, mapBlock, concatBlocks, toString } = require("terminal-block-fonts");
 const { red, yellow, blue } = require("chalk");
 
-const hourBlock = toBlock("05";
+const hourBlock = toBlock("05");
 const minuteBlock = toBlock("30");
 const secondBlock = toBlock("12");
 const sepBlock = toBlock(":");
